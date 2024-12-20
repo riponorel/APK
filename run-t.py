@@ -90,7 +90,7 @@ def run_bot(data_account, recover=1):
         driver.find_element(By.CSS_SELECTOR, "input[placeholder='Password']").send_keys(
             "@@Kamudia12sPos"
         )
-        time.sleep(2)
+        time.sleep(50)
         driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
         time.sleep(15)
 
