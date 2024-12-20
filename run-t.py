@@ -76,14 +76,14 @@ def run_bot(data_account, recover=1):
         time.sleep(3)
 
         # Isi form dengan slug
-        print("BUAT SLUG")
+        print(f"BUAT SLUG", file=sys.__stderr__)
         driver.find_element(
             By.CSS_SELECTOR, "input[placeholder='your-name']"
         ).send_keys(slug)
         time.sleep(40)
         driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
         time.sleep(15)
-        print("SELESAI SLUG")
+        print(f"SELESAI SLUG", file=sys.__stderr__)
 
         # Isi email dan password
         driver.find_element(
